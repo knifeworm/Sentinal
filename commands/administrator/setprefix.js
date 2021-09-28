@@ -3,6 +3,7 @@ const db = require('quick.db');
 
 module.exports = {
     name: 'setprefix',
+    description: 'Sets the prefix for that server.',
     run: async (client, message, args, prefix) => {
         if(!message.content.startsWith(prefix)) return;
 
