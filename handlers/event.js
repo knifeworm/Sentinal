@@ -1,3 +1,7 @@
+const ascii = require('ascii-table');
+let table = new ascii("Events");
+table.setHeading('Events', ' Load status');
+
 const {readdirSync, readdir} = require('fs');
 module.exports = (client) => {
     readdirSync("./events/").forEach((file) => {
@@ -8,7 +12,10 @@ module.exports = (client) => {
             if(pull.name)
             {
                 client.events.set(pull.name, pull)
+                table.addRow(file,'Event Loaded!');
+
             } else {
+                table.addRow(file, 'Event Error');
                 continue;
             }
         }
