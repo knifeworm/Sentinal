@@ -30,8 +30,4 @@ client.categories = fs.readdirSync("./commands/");
     require(`./handlers/${handler}`)(client);
 });
 
-client.once('ready', () => {
-  console.log(`${client.user.tag} is ready`)
-})
-
 client.login(config.token)
