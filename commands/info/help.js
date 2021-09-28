@@ -20,7 +20,7 @@ module.exports = {
             ];
             const emo = {
                 info: "❗",
-                moderation: "🔧",
+                administrator: "🔧",
                 utility: "⚙️"
             }
 
@@ -57,7 +57,6 @@ module.exports = {
                 .setTitle(`Bot Commands`)
                 .setDescription(`\`\`\`asciidoc\n${description}\`\`\``)
                 .addFields(categories)
-                .setImage("https://media.discordapp.net/attachments/872362756924395560/878900290424827924/20210820_100957.jpg")
                 .setFooter(
                     `Requested by ${message.author.tag}`,
                     message.author.displayAvatarURL({

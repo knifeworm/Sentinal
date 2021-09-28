@@ -10,7 +10,7 @@ const create_mh = (array) => {
     const emo = {
         info: "❗",
         utility: "⚙️",
-        moderation: "🔧",
+        administrator: "🔧",
     }
     
     array.forEach(cca => {
