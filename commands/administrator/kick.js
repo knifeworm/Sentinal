@@ -2,7 +2,7 @@ const { MessageEmbed, Permissions } = require("discord.js");
 
 module.exports = {
         name: "kick",
-        category: "moderation",
+        category: "administrator",
         description: "Kicks the user",
         accessableby: "Administrator",
         usage: "[name | nickname | mention | ID] <reason> (optional)",
